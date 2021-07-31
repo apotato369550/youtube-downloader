@@ -23,6 +23,18 @@ class YoutubeDownloader:
         self.path_label.grid(column=0, row=2)
         self.extension_label.grid(column=0, row=3)
 
+        self.link_entry = tk.Entry(self.window, width=40)
+        self.name_entry = tk.Entry(self.window, width=40)
+        self.path_entry = tk.Entry(self.window, width=40)
+        self.extension_entry = tk.Entry(self.window, width=40)
+
+        self.link_entry.grid(column=1, row=0)
+        self.name_entry.grid(column=1, row=1)
+        self.path_entry.grid(column=1, row=2)
+        self.extension_entry.grid(column=1, row=3)
+
+
+
     def run(self):
         self.window.mainloop()
         return
